@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 
 const Header = () => {
@@ -42,10 +43,15 @@ const Header = () => {
             </a>
           </nav>
 
-          <Button className="bg-neon-green text-dark-bg hover:bg-neon-green/80 neon-border border-neon-green">
-            <Icon name="Play" className="w-4 h-4 mr-2" />
-            Играть
-          </Button>
+          <div className="flex items-center space-x-2">
+            <Badge className="bg-neon-green text-dark-bg animate-neon-pulse">
+              ADMIN
+            </Badge>
+            <Button className="bg-neon-green text-dark-bg hover:bg-neon-green/80 neon-border border-neon-green">
+              <Icon name="Play" className="w-4 h-4 mr-2" />
+              Играть
+            </Button>
+          </div>
         </div>
       </div>
     </header>
